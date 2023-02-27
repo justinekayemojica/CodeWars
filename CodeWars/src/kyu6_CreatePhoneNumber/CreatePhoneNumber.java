@@ -1,4 +1,4 @@
-package KYU6_CreatePhoneNumber;
+package kyu6_CreatePhoneNumber;
 
 import java.util.Arrays;
 import java.util.function.Function;

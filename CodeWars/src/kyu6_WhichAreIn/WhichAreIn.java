@@ -1,4 +1,4 @@
-package KYU6_WhichAreIn;
+package kyu6_WhichAreIn;
 
 import java.util.ArrayList;
 import java.util.Arrays;
