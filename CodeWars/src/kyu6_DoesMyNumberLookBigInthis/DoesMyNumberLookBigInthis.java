@@ -33,13 +33,13 @@ import java.util.stream.Collectors;
 
 public class DoesMyNumberLookBigInthis {
 	public static void main(String[] args) {
-		int number = 112;
+		int number = 1938;
 		System.out.println(isNarcissistic(number) ? number + " is narcissistic" : number + " is not narcissistic" );
 	}
 	
 	public static boolean isNarcissistic(int number) {
-        return Arrays.asList(String.valueOf(number).split("")).stream().map(Integer::valueOf).collect(Collectors.toList())
-				.stream().map(n -> Math.pow(Double.valueOf(n), Double.valueOf(String.valueOf(number).length())))
+        return Arrays.asList(String.valueOf(number).split("")).stream().map(Integer::valueOf)
+        		.map(n -> Math.pow(Double.valueOf(n), Double.valueOf(String.valueOf(number).length())))
 				.reduce((x,y) -> x + y).get().intValue() == number;
     }
 
