@@ -1,4 +1,4 @@
-package kyu6ConsecutiveStrings;
+package kyu6_ConsecutiveStrings;
 
 import java.util.ArrayList;
 import java.util.Comparator;
