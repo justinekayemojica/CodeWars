@@ -41,5 +41,4 @@ public class DoesMyNumberLookBigInthis {
         		.map(n -> Math.pow(Double.valueOf(n), Double.valueOf(String.valueOf(number).length())))
 				.reduce((x,y) -> x + y).get().intValue() == number;
     }
-
 }
