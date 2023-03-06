@@ -20,6 +20,7 @@ public class BuildASquare {
 	public static void main(String[] args) {
 		System.out.println(generateShape(50));
 		System.out.println();
+		
 	}
 	
 	public static final String generateShape1(int n) {
